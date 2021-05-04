@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">   
+  </head>
+<body>
+    <main>
+        
+        <div class="PrimeiraDiv">
+          <div class="line-chart">
+            <div class="aspect-ratio">
+          <canvas class="chart"></canvas>
+        </div>
+        </div>
+        <h1 class="test"><span class="highlight">Salário</span> X <span class="highlight">Custo</span></h1>
+        </div>
+        
+
+        <setcion class="mainDiv">
+          
+        <div>
+          <h1 class="TituloConsumo">Consumo de <span class="highlightEnergia">energia</span> anual</h1>
+          <div class="line-chart">
+            <div class="aspect-ratio">
+          <canvas class="EnergyChart"></canvas>
+        </div>
+      </div>
+        </div>
+        <div>
+          <h1 class="TituloConsumo">Consumo de <span class="highlightAgua">água</span> anual</h1>
+          <div class="line-chart">
+            <div class="aspect-ratio">
+          <canvas class="WaterChart"></canvas>
+        </div>
+      </div>
+        </div>
+      </section>
+    </main>
+    <div class="footer">
+    <h1 class="SobraTitulo">O que sobrou nesse mês, até agora, foi: </h1>
+    <button id="SaveMonth">Salvar o mês</button>
+    <button id="AddSalary">Adicionar Salário</button>
+  </div>
+    <div class="BarraLateral">     
+        <div class="BarraLateralItens">
+            <p class="TitleName">Anderson Madruga</p>
+            <div class="image-cropper">
+            <img src="foto.jpg" alt="imagem de homem abastecendo carro" class="img">
+          </div>
+          <div class="centralizar">
+        <input class="search" placeholder="Busque o que já pagou">
+      </div>
+        <p class="Title2">Acesso Rápido</p>
+        <div class="centralizar">
+        <button id="add">Adicionar contas pagas</button>
+      </div>
+    </div>
+    
+
+<script src="main.js"></script>
+</body>
+</html>

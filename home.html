@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+</head>
+<body>
+    <div class="texto">
+        <h1>Olá,  <span class="highlight">Anderson!</span>
+    </h1>
+    <h2 class="data">Quais contas deseja adicionar hoje?</h2>
+    
+</div>    
+      <div class="custom-shape-divider-bottom-1609205540">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    
+    <a><button onmouseover="ButtonChangeColor()" onmouseout="ButtonChangeColorBack()" onclick="window.location.href = 'C:/Users/Jo%C3%A3o%20Pedro/Desktop/Localstorage/index.html'" class="ButtonChangeColorBack">Começar a adicionar</button></a>
+    <script>
+        function ButtonChangeColor(){
+            document.querySelector("button").setAttribute("class", "ButtonChangeColor");
+        }
+        function ButtonChangeColorBack(){
+            document.querySelector("button").setAttribute("class", "ButtonChangeColorBack");
+        }
+        var i=0;
+        var text = "Quais contas deseja adicionar hoje?";
+      
+        function typing(){
+            if(i<text.length){
+                document.querySelector("h2").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typing, 60);
+            }
+        }
+        const texto = baffle(".data");
+        const HighlighText = baffle(".highlight");
+        const h1Text = baffle("h1");
+        texto.set({
+            characters: '/█▒ ░░░▓░ █░░░█ ░██ ▒░█▒< ▓<▓▒ ▓██ ▓▒/> ▓▓▓▒',
+            speed: 120
+        });
+        texto.start();
+        texto.reveal(2000);
+        HighlighText.set({
+            characters: '<▒▓ >█>░▓ ▓█▒█░ ░▒▓ ▒>░░░ ▓░▓▓ ██▒ <█▒█ /▓█░',
+            speed: 200
+        });
+        HighlighText.start();
+        HighlighText.reveal(800);
+        h1Text.set({
+            characters: '<▒▓ >█>░▓ ▓█▒█░ ░▒▓ ▒>░░░ ▓░▓▓ ██▒ <█▒█ /▓█░',
+            speed: 120
+        });
+        h1Text.start();
+        h1Text.reveal(1000);
+    </script>
+</body>
+</html>

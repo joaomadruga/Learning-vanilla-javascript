@@ -1,0 +1,113 @@
+body{
+    background-color: #1d1d1d;
+    font-family: 'Poppins', sans-serif;
+}
+h1, h2{
+    font-size: 50px;
+    color: #0D7377;
+    text-align: center;
+}
+.texto {
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.ButtonChangeColorBack{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #0D7377;
+    background-color: transparent;
+    color: #0D7377;
+    
+}
+.ButtonChangeColor{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    color: #1d1d1d;
+    background-color: #0D7377;
+    -webkit-animation: myanim 1.8s 0s backwards;
+    animation: myanim 1.8s 0s backwards;
+}
+@keyframes myanim{
+    0%{
+        background-color: transparent;
+        color: #0D7377;
+    }
+    100%{
+        color: #1d1d1d;
+        background-color: #0D7377;
+    }
+}
+a{
+    background-color: transparent;
+}
+button::after{
+    background-color: white;
+}
+h2{
+    margin-top: -40px;
+}
+
+.custom-shape-divider-bottom-1609205540 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1609205540 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 3px);
+    height: 220px;
+    transform: rotateY(180deg);
+    animation: OndaAnimada 8s ease-in-out infinite;
+    animation-delay: 1s;
+    animation-direction: alternate;
+}
+@keyframes OndaAnimada{
+    0%{
+        width: 100%
+    }
+    100%{
+        width: 200%
+    }
+
+}
+.highlight{
+    background-color:#0D7377;
+    color:#1d1d1d;
+    width: 260px;
+}
+.custom-shape-divider-bottom-1609205540 .shape-fill {
+    fill: #0D7377;
+}
+button{
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color: #0D7377;
+    color: #1d1d1d;
+    font-size: 1.0625em;
+    padding: .625em 1.1em;
+    margin-top: 10px;
+    cursor: pointer;
+}
